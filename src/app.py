@@ -7,4 +7,6 @@ from fastapi.requests import Request
 from fastapi.responses import JSONResponse
 
 app = FastAPI()
-
+app.include_router(gym_classes_router)
+app.include_router(clients_router)
+app.include_router(gym_passes_router)
